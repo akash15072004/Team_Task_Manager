@@ -72,11 +72,11 @@ const registerUser = asyncHandler(async (req, res) => {
 });
 
 // POST -  Logout user / clear cookie
-const logoutUser = (req, res) => {
-  res.cookie("token", "", {
-    httpOnly: true,
-    expires: new Date(0),
-  });
+res.cookie("token", token, {
+  httpOnly: true,
+  secure: true,
+  sameSite: "none",
+});
   res.status(200).json({ message: "Logged out successfully" });
 };
 
