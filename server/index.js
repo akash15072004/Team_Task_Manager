@@ -7,7 +7,7 @@ import { errorHandler, routeNotFound } from "./middleware/errorMiddleware.js";
 import routes from "./routes/index.js";
 import dbConnection from "./utils/connectDB.js";
 
-dotenv.config({ path: "./.env" }); // ✅ keep only this
+dotenv.config({ path: "./.env" });
 
 dbConnection();
 
@@ -18,9 +18,10 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://team-task-manager-jade.vercel.app",
+      "https://team-task-manager-jade.vercel.app", 
+      "https://team-task-manager-4q1s.onrender.com",
       "http://localhost:3000",
-      "http://localhost:3001"
+      "http://localhost:3001",
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
