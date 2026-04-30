@@ -18,16 +18,12 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://team-task-manager-jade.vercel.app", 
-      "https://team-task-manager-4q1s.onrender.com",
       "http://localhost:3000",
-      "http://localhost:3001",
+      "https://team-task-manager-jade.vercel.app",
     ],
-    methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
 );
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
