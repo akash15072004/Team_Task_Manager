@@ -5,9 +5,8 @@ A full-stack **Team Task Management Web Application** where users can create pro
 ---
 
 ## 🌐 Live Demo
-
-* **Frontend:** https://task-manager-6oklg4.lumi.ing/
-* **Backend:** https://team-task-manager-4q1s.onrender.com
+  
+* **Link:**  https://akash-team-task-manager-app.lumi.ing 
 
 ---
 
